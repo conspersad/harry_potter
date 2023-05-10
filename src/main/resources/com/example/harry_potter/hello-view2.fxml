@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.harry_potter.Scene2"
+            prefHeight="400.0" prefWidth="600.0" fx:id="window">
+    <Label fx:id="Intro" text="Now you have to answer this few questions to help the sorting hat, answer with your heart !"/>
+    <children>
+        <Label text="What super power would you like to have ?" />
+        <HBox>
+            <children>
+                <RadioButton text="Read minds" fx:id="answer1Button"/>
+                <RadioButton text="Extreme intelligence" fx:id="answer2Button" />
+                <RadioButton text="Extraordinary strength" fx:id="answer3Button" />
+                <RadioButton text="Fly" fx:id="answer4Button" />
+            </children>
+        </HBox>
+    </children>
+
+    <children>
+        <Label text="What quality describe you the best ?" />
+        <HBox>
+            <children>
+                <RadioButton text="Confident " fx:id="answer21Button" />
+                <RadioButton text=" Smart" fx:id="answer22Button" />
+                <RadioButton text="Worker" fx:id="answer23Button" />
+                <RadioButton text="Brave" fx:id="answer24Button" />
+            </children>
+        </HBox>
+    </children>
+    <children>
+        <Label text="What class do you prefer ?" />
+        <HBox>
+            <children>
+                <RadioButton text="Sort " fx:id="answer31Button" />
+                <RadioButton text="Potions " fx:id="answer32Button" />
+                <RadioButton text="Worker" fx:id="answer33Button" />
+                <RadioButton text="Brave" fx:id="answer34Button" />
+            </children>
+        </HBox>
+    </children>
+    <children>
+        <Label text="What poster do you have in your room ?" />
+        <HBox>
+            <children>
+                <RadioButton text="A fat lady " fx:id="answer41Button" />
+                <RadioButton text="A knight " fx:id="answer42Button" />
+                <RadioButton text="A unicorn  " fx:id="answer43Button" />
+                <RadioButton text="A snake" fx:id="answer44Button" />
+            </children>
+        </HBox>
+    </children>
+    <children>
+        <Label text="What are your favorite sweets ?" />
+        <HBox>
+            <children>
+                <RadioButton text="Chocolate " fx:id="answer51Button" />
+                <RadioButton text="Peanut " fx:id="answer52Button" />
+                <RadioButton text="Licorice  " fx:id="answer53Button" />
+                <RadioButton text="Pepper" fx:id="answer54Button" />
+            </children>
+        </HBox>
+    </children>
+    <Button text="ok" onAction="#showHouse"/>
+    <Label fx:id="Outro" />
+</VBox>
