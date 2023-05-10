@@ -15,6 +15,7 @@ public class HelloApplication extends Application {
         stage.setTitle("RPG Harry Potter");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {

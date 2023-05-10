@@ -40,8 +40,8 @@
             <children>
                 <RadioButton text="Sort " fx:id="answer31Button" />
                 <RadioButton text="Potions " fx:id="answer32Button" />
-                <RadioButton text="Worker" fx:id="answer33Button" />
-                <RadioButton text="Brave" fx:id="answer34Button" />
+                <RadioButton text="Herbology" fx:id="answer33Button" />
+                <RadioButton text="Defense against the force of evil" fx:id="answer34Button" />
             </children>
         </HBox>
     </children>

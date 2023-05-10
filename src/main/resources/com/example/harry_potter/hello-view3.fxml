@@ -6,9 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<VBox xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.harry_potter.Scene3"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+            prefHeight="400.0" prefWidth="600.0" fx:id="window">
+    <Label fx:id="The_philosopher_stone"
+           text="Chapiter 1&#10;The philosopher stone !&#10;"/>
+    <Label fx:id="The_philosopher_stone_Intro"
+           text="It's been a few months since you are in Poudlard now,&#10; you have made quite a few friends, and you are doing very well in your first class !&#10;
+                You even learn your first speel, it's Wingardium Leviosas.&#10;
+                But this morning you wake up and you didn't see your friend Nevile in potion class.&#10;"/>
+</VBox>

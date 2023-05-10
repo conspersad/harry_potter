@@ -4,7 +4,6 @@ package com.example.harry_potter;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -19,10 +18,10 @@ import java.io.IOException;
 
 public class HelloController {
     public Button gotoname;
-    public String name;
-    public int size;
-    public Pet SelectPet;
-    public Core SelectCore;
+    public static String name;
+    public static int size;
+    public static Pet SelectPet;
+    public static Core SelectCore;
     @FXML
     private VBox window;
     @FXML
@@ -48,6 +47,9 @@ public class HelloController {
             window.getChildren().addAll(welcome,go_toScene3);
             go_toScene3.setOnAction(e -> GoToScene3());
         });
+    }
+    public static String getName() {
+        return name;
     }
     private void GoToScene3(){
         window.getChildren().clear();
@@ -104,6 +106,10 @@ public class HelloController {
             goToWand.setOnAction(e -> GoToScene4());
         });
         }
+
+    public static Pet getPet() {
+        return SelectPet;
+    }
     private void GoToScene4(){
         window.getChildren().clear();
         Label choose_core = new Label("Please the core for your wand!");
@@ -147,6 +153,7 @@ public class HelloController {
             goToWand_size.setOnAction(e -> GoToScene5());
         });
     }
+
     private void GoToScene5(){
         window.getChildren().clear();
         Label promptLabel = new Label("Now you have to choose your wand\n" +  "this one would choose you but what size would you like ?\n"+"It has to be between 9 and 40 inches");
@@ -175,6 +182,8 @@ public class HelloController {
             go_toScene6.setOnAction(e -> GoToScene6());
         });
 
+    }public static int getCore() {
+        return size;
     }
     private void GoToScene6(){
         window.getChildren().clear();
