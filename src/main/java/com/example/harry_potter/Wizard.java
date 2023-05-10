@@ -26,6 +26,7 @@ public class Wizard extends Character {
     public int defend() {
         return 0;
     }
+    public String getName(){return name;}
 
 /*
     @Override
