@@ -2,11 +2,17 @@ package com.example.harry_potter;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Scene2 {
     @FXML
@@ -93,12 +99,30 @@ public class Scene2 {
 
         }
 
-        Button go_toScene6 = new Button("Continue");
-        window.getChildren().add(go_toScene6);
-        go_toScene6.setOnAction(e -> GoToScene_fight());
+        Button GoToScene_fight = new Button("Continue");
+        window.getChildren().add(GoToScene_fight);
+        GoToScene_fight.setOnAction(e -> GoToScene_fight());
     }
     public void GoToScene_fight(){
+        window.getChildren().clear();
+        // Get the current stage
 
+        Stage stage = (Stage) window.getScene().getWindow();
+
+        // Load the FXML file for the second scene
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view3.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Create a new scene with the loaded root node
+        Scene Scene3 = new Scene(root,600,600 );
+
+        // Set the new scene to be displayed on the stage
+        stage.setScene(Scene3);
     }
 
 }
