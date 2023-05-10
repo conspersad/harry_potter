@@ -15,5 +15,10 @@
     <Label fx:id="The_philosopher_stone_Intro"
            text="It's been a few months since you are in Poudlard now,&#10; you have made quite a few friends, and you are doing very well in your first class !&#10;
                 You even learn your first speel, it's Wingardium Leviosas.&#10;
-                But this morning you wake up and you didn't see your friend Nevile in potion class.&#10;"/>
+                But this morning you wake up and you didn't see your friend Nevile in potion class.&#10; "/>
+    <Label fx:id="Label_suite_intro" text=" But this morning you wake up and you didn't see your friend Nevile in potion class.&#10;When you ask what happen to your friend Hermoine she tell you :&#10;
+             Hermione: Well, i saw him coming back from the toilets of the donjon yesterdays he looked very scared, it's seems like he saw a ghost!!&#10;
+            &#10; You decide to go to the toilet to find you friend ! &#10;But when you enter the room you see your friend trying to fight a TROLL !!&#10; What do you want  to do"/>
+    <Button fx:id="fight" text="Fight" onAction="#Fight"/>
+    <Button fx:id="left" text="Leave" onAction="#StopGame"/>
 </VBox>
