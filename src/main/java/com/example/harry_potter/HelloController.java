@@ -119,7 +119,7 @@ public class HelloController {
         // Créer un ToggleGroup pour que les boutons radio soient mutuellement exclusifs
         ToggleGroup Wand_core = new ToggleGroup();
 
-        // Créer des boutons radio pour chaque option de choix d'animal
+
         RadioButton Phoenix_feather = new RadioButton("Phoenix feather");
         Phoenix_feather.setToggleGroup(Wand_core);
 
@@ -127,14 +127,13 @@ public class HelloController {
         Dragon_heartstring.setToggleGroup(Wand_core);
 
         window.getChildren().addAll(Phoenix_feather, Dragon_heartstring);
-        // Ajouter un bouton pour permettre à l'utilisateur de valider son choix
+
         Button submitButton = new Button("Choose");
-        // Ajouter le bouton de soumission à la VBox
+
         window.getChildren().add(submitButton);
 
         submitButton.setOnAction(event -> {
 
-            // Récupérer l'option sélectionnée par l'utilisateur
             Core SelectCore = null;
             if (Phoenix_feather.isSelected()) {
                 SelectCore = Core.Phoenix_feather;

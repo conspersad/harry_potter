@@ -27,6 +27,10 @@ public class Wizard extends Character {
         return 0;
     }
     public String getName(){return name;}
+    public String getHouse(){return house;}
+    public boolean isAlive() {
+        return hp > 0;
+    }
 
 /*
     @Override
