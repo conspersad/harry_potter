@@ -43,19 +43,19 @@ public class Scene3 {
     }
     @FXML
     private void Fight() {
-        window.getChildren().clear();
         fight.setOnAction(e->{
             enemy = new Enemy("Troll", 30, 10);
-            battle();
+            Button go_toScene6 = new Button("Continue");
+            window.getChildren().add(go_toScene6);
+            go_toScene6.setOnAction(event ->battle());
     });
 }
     public void battle(){
-
+        window.getChildren().clear();
         // Boucle principale du jeu
         while (wizard.isAlive() && enemy.isAlive()) {
             wizard.xp=Spell.damage;
-            Label score5 = new Label("test2");
-            window.getChildren().add(score5);
+
             Label score = new Label(wizard.getName() + " (" + wizard.hp + " hp, " + wizard.getXp() + " Xp) vs " + enemy.getName() + " (" + enemy.getHp() + " hp, " +  enemy.getXp() + " xp)");
 
             ToggleGroup choose = new ToggleGroup();
