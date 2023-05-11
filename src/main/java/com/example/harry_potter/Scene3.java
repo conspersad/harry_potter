@@ -54,7 +54,7 @@ public class Scene3 {
         // Boucle principale du jeu
         while (wizard.isAlive() && enemy.isAlive()) {
             wizard.xp=Spell.damage;
-            Label score5 = new Label("test");
+            Label score5 = new Label("test2");
             window.getChildren().add(score5);
             Label score = new Label(wizard.getName() + " (" + wizard.hp + " hp, " + wizard.getXp() + " Xp) vs " + enemy.getName() + " (" + enemy.getHp() + " hp, " +  enemy.getXp() + " xp)");
 
